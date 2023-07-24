@@ -1,0 +1,10 @@
+public class DivisionPorCero {
+
+    public static void main(String[] args) {
+        try {
+            int valor = 1 / 0;
+        } catch (java.lang.ArithmeticException e) {
+            System.out.println("Esta division no se puede " + e.getMessage());
+        }
+    }
+}
