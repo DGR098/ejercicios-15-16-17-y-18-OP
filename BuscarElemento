@@ -1,0 +1,13 @@
+public class BuscarElemento {
+
+    public static void main(String[] args) {
+
+        String array[] = {"1","2","3","4","5"};
+
+        try {
+            String elementoNueve = array[9];
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Esta lista solo tiene 5 elementos" + e.getMessage());
+        }
+    }
+}
